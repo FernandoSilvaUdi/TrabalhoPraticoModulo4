@@ -20,8 +20,6 @@ import accountsRouter from './routes/accountsRouter.js';
   }
 })();
 
-// // const readFile = promises.readFile;
-// // const writeFile = promises.writeFile;
 const app = express();
 
 // // avisa o express que será utilizado o formato json
