@@ -9,13 +9,8 @@ import 'dotenv/config.js'; // encontrei no github
 // Conexão com o banco de dados mongoose
 (async () => {
   try {
-    console.log('conectando');
-    console.log(process.env.USERDB);
-    console.log(process.env.PWDDB);
-    console.log(process.env.PORT);
-
+    console.log('Conectando ao MongoDB');
     await mongoose.connect(
-      // 'mongodb+srv://fernandosilvaudi:V2krLbOl8H71STdt@bootcamp.zqebg.gcp.mongodb.net/TrabalhoPratico?retryWrites=true&w=majority',
       `mongodb+srv://${process.env.USERDB}:${process.env.PWDDB}@bootcamp.zqebg.gcp.mongodb.net/TrabalhoPratico?retryWrites=true&w=majority`,
       {
         useNewUrlParser: true,
