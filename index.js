@@ -1,6 +1,5 @@
 import express from 'express';
 import mongoose from 'mongoose';
-// // import { promises } from 'fs';
 import accountsRouter from './routes/accountsRouter.js';
 
 // Conexão com o banco de dados mongoose
@@ -28,17 +27,4 @@ app.use('/account', accountsRouter);
 
 app.listen(3000, async () => {
   console.log('testando');
-  //   // try {
-  //   //   await readFile(fileName, 'utf8');
-  //   //   logger.info('API Started!');
-  //   // } catch (err) {
-  //   //   const initialJson = {
-  //   //     nextId: 1,
-  //   //     accounts: [],
-  //   //   };
-  //   //   // método stringfy transforma JSON em String
-  //   //   writeFile(fileName, JSON.stringify(initialJson)).catch((err) => {
-  //   //     logger.error(err);
-  //   //   });
-  //   // }
 });
