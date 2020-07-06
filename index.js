@@ -26,5 +26,5 @@ app.use(express.json());
 app.use('/account', accountsRouter);
 
 app.listen(3000, async () => {
-  console.log('testando');
+  console.log('Iniciando');
 });
